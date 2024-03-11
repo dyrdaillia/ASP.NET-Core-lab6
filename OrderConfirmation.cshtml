@@ -1,0 +1,7 @@
+﻿@model List<Product>
+
+<h2>Ваше замовленя:</h2>
+@foreach (var product in Model)
+{
+    <p>@product.Name - Quantity: @product.Quantity</p>
+}

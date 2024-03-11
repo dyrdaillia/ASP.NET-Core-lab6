@@ -1,0 +1,9 @@
+﻿@model User
+
+<form asp-action="Register" method="post">
+    <label>Ім'я:</label>
+    <input type="text" asp-for="Name" /><br />
+    <label>Вік:</label>
+    <input type="number" asp-for="Age" /><br />
+    <input type="submit" value="Register" />
+</form>

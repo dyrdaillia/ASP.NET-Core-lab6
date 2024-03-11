@@ -1,0 +1,17 @@
+﻿@model User
+
+<form asp-action="OrderProducts" method="post">
+    @for (int i = 0; i < 5; i++)
+    {
+        <title>Скільки одиниць товару ви бажаєте замовити?</title>
+        <label>Назва піци @i:</label>
+        <input type="text" name="products[@i].Name" />
+
+        <br />
+        <label>Кількість:</label>
+        <input type="number" name="products[@i].Quantity" />
+
+        <br />
+    }
+    <input type="submit" value="Order Products" />
+</form>
